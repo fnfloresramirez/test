@@ -60,4 +60,22 @@ The script `test_1812024.py` executes the following EDA steps:
 4.  **Univariate EDA:** Generates histograms and box plots for each key numerical feature to understand their individual distributions and identify outliers.
 5.  **Bivariate EDA:** Creates scatter plots to visualize relationships between pairs of features and computes/displays a correlation matrix (with a heatmap) to quantify these relationships.
 6.  **Time Series Plotting:** Visualizes each key numerical feature over time to observe trends or patterns.
+
+## Reading Dataset with Polars
+
+This project also includes a script `read_dataset.py` to demonstrate reading a CSV file using the Polars library.
+
+### Installation
+
+To install the necessary dependencies, run:
+```bash
+pip install -r requirements.txt
 ```
+
+### How to Run
+
+To execute the script, navigate to the project root directory and run:
+```bash
+python read_dataset.py
+```
+This script will read the `data/sample_data.csv` file, print the first few rows of the DataFrame, its descriptive statistics, and its shape. It includes error handling for cases where the file is not found or other issues occur during processing.
